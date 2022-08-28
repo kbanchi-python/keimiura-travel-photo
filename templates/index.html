@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅行アルバム</title>
+    <link rel="stylesheet" href="static/css/kei.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</head>
+
+<body id="sample">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">旅行アルバム</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">写真一覧</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            選択
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="fluit">
+        <form action="/" method="get">
+            <div class="sample1">
+                <p>撮影した月</p>
+                <select name="date">
+                    <option selected disabled>候補リストがあります</option>
+                    <option value="2021-01">2021年1月</option>
+                    <option value="2021-02">2021年2月</option>
+                    <option value="2021-03">2021年3月</option>
+                    <option value="2021-04">2021年4月</option>
+                    <option value="2021-05">2021年5月</option>
+                    <option value="2021-06">2021年6月</option>
+                    <option value="2021-07">2021年7月</option>
+                    <option value="2021-08">2021年8月</option>
+                    <option value="2021-09">2021年9月</option>
+                    <option value="2021-10">2021年10月</option>
+                    <option value="2021-11">2021年11月</option>
+                    <option value="2021-12">2021年12月</option>
+                    <option value="2022-01">2022年1月</option>
+                    <option value="2022-02">2022年2月</option>
+                    <option value="2022-03">2022年3月</option>
+                    <option value="2022-04">2022年4月</option>
+                    <option value="2022-05">2022年5月</option>
+                    <option value="2022-06">2022年6月</option>
+                    <option value="2022-07">2022年7月</option>
+                    <option value="2022-08">2022年8月</option>
+                    <option value="2022-09">2022年9月</option>
+                </select>
+            </div>
+            <div class="sample2">
+                <p>撮影した地方</p>
+                <select name="place">
+                    <option selected disabled>候補リストがあります</option>
+                    <optgroup label="北海道地方">
+                        <option value="hokkaido">北海道</option>
+                    </optgroup>
+                    <optgroup label="東北地方">
+                        <option value="aomori">青森</option>
+                        <option value="iwate">岩手</option>
+                        <option value="akita">秋田</option>
+                        <option value="miyagi">宮城</option>
+                        <option value="yamagata">山形</option>
+                        <option value="fukushima">福島</option>
+                    </optgroup label>
+                    <optgroup label="関東地方">
+                        <option value="gunma">群馬</option>
+                        <option value="tochigi">栃木</option>
+                        <option value="ibaraki">茨城</option>
+                        <option value="chiba">千葉</option>
+                        <option value="saitama">埼玉</option>
+                        <option value="tokyo">東京</option>
+                        <option value="kanagawa">神奈川</option>
+                    </optgroup label>
+                    <optgroup label="中部地方">
+                        <option value="mendokusainodeatodetsukurimasu">新潟県</option>
+                    </optgroup label>
+                    <optgrpup>近畿地方</optgroup>
+                        <optgroup>中国・四国地方</optgroup>
+                        <optgroup>九州地方</optgroup>
+                        <optgroup>沖縄地方</optgroup>
+                </select>
+            </div>
+            <div class="sample3">
+                <p>写真ジャンル</p>
+                <select name="genre">
+                    <option selected disabled>候補リストがあります</option>
+                    <option>全て</option>
+                    <option>山</option>
+                    <option>海</option>
+                    <option>風景</option>
+                    <option>交通機関</option>
+                    <option>都会</option>
+                    <option>人</option>
+                    <option>食べ物/飲み物</option>
+                    <option>名所・史跡</option>
+                    <option>日本のお土産</option>
+                </select>
+            </div>
+            <div class="sample4">
+                <input type="search" name="search_text" value="{{ search_text }}" placeholder="検索キーワードを入力してください">
+                <input type="submit" value="検索">
+            </div>
+        </form>
+        <a href="/add" class="btn btn-primary">写真を追加</a>
+        <div class="lion">
+            <h3>写真をクリックすることで写真の詳細情報を確認できます。</h3>
+        </div>
+        <div class="apple">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        {% for file in files %}
+                        <a href="/detail/{{ file.id }}">
+                            <img class="m-2" src="{{ file.file_path }}" width="320" height="240"
+                                style="border: solid 5px black"></a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+
+#sample {
+    padding: 15px;
+    background-color:#fff
+}
+.sample1,.sample2,.sample3 {
+    padding: 10px;
+    float: left;
+}
+
+.sample4 {
+    padding: 20px;
+    clear: left;
+}
+.lion {
+    color: green;
+    padding-left: 30px;
+}
+.apple {
+    display: flex;
+    padding: 10px;
+}
+
+.fluit {
+    background-color: #dcffdc;
+}
+
+p.apple {
+    text-align: center;
+}
